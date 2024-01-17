@@ -2,6 +2,7 @@ package com.in28minutes.learnspringframework.game;
 
 import org.springframework.stereotype.Component;
 
+// @component is a class that is managed by spring framework
 @Component
 //@Primary
 public class SuperContraGame implements GamingConsole{
