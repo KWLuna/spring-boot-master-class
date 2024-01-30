@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 import jakarta.validation.Valid;
-
+// Commented because TodoControllerJpa.java consist of the same functionality, but we want to use the Jpa one.
 //@Controller
 @SessionAttributes("name")
 public class TodoController {
