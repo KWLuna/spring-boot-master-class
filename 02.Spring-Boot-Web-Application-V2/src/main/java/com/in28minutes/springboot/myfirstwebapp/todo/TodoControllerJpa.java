@@ -53,6 +53,7 @@ public class TodoControllerJpa {
 		}
 		
 		String username = getLoggedInUsername(model);
+		// only have set username bcz Repo dun have method that can possibility take all attributes.
 		todo.setUsername(username);
 		todoRepository.save(todo);
 //		todoService.addTodo(username, todo.getDescription(), 

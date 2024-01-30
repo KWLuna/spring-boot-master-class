@@ -16,6 +16,7 @@ public class TodoService {
 	
 	private static int todosCount = 0;
 	
+	// Not sure how to get from database instead of Static. Mentioned in Step 37 but i dk
 	static {
 		todos.add(new Todo(++todosCount, "in28minutes","Get AWS Certified 1", 
 							LocalDate.now().plusYears(1), false ));
