@@ -38,10 +38,11 @@ public class TodoService {
 	}
 	
 	public void deleteById(int id) {
-		//todo.getId() == id
+		//todo.getId() == id <- Condition
 		// todo -> todo.getId() == id
+		// FYI: Predicate == Condition
 		Predicate<? super Todo> predicate = todo -> todo.getId() == id;
-		todos.removeIf(predicate);
+		todos.removeIf(predicate); // Removes to do if the condition is met
 	}
 
 	public Todo findById(int id) {
