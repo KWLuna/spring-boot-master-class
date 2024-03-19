@@ -8,12 +8,13 @@ import org.junit.jupiter.api.Test;
 
 class MyBeforeAfterTest {
 
-	
+	// Executed before all tests (executed only once)
 	@BeforeAll
 	static void beforeAll() {
 		System.out.println("beforeAll");
 	}
 	
+	// Executed before each test
 	@BeforeEach
 	void beforeEach() {
 		System.out.println("BeforeEach");
@@ -34,11 +35,13 @@ class MyBeforeAfterTest {
 		System.out.println("test3");
 	}
 
+	// Executed each test
 	@AfterEach
 	void afterEach() {
 		System.out.println("AfterEach");
 	}
 
+	// Executed after all tests (executed only once)
 	@AfterAll
 	static void afterAll() {
 		System.out.println("afterAll");
