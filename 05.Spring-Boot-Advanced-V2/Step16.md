@@ -621,6 +621,8 @@ public interface UserDetailsRepository extends JpaRepository<UserDetails, Long>{
 
 ### /src/main/resources/application.properties
 
+setting datasource.url sets stati url for H2.
+show-sql allows sql queries to show up in console. [step 16]
 ```properties
 logging.level.org.springframework=info
 spring.datasource.url=jdbc:h2:mem:testdb
