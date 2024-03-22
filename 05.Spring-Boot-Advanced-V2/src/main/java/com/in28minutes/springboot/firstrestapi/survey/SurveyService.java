@@ -63,7 +63,9 @@ public class SurveyService {
 
 		if (surveyQuestions == null)
 			return null;
-
+		// Optional - either hold a Question object or be empty 
+		// stream() - convert the collection into a stream
+		// .filter() - filters the Question objects based on whether their id is equal to the questionId
 		Optional<Question> optionalQuestion = surveyQuestions.stream()
 				.filter(q -> q.getId().equalsIgnoreCase(questionId)).findFirst();
 
